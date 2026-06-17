@@ -26,7 +26,8 @@ window.addEventListener('load', () => {
     });
 });
 
-const openBtn = document.getElementById("openModal");
+//popup
+const openBtn = document.getElementsByClassName("openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
 
@@ -38,6 +39,7 @@ closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
 });
 
+//carousel
 const track = document.getElementById('carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.getElementById('carousel-prev');
