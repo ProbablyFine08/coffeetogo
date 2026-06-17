@@ -38,6 +38,49 @@ closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
 });
 
+const track = document.getElementById('carousel-track');
+const slides = document.querySelectorAll('.carousel-slide');
+const prevBtn = document.getElementById('carousel-prev');
+const nextBtn = document.getElementById('carousel-next');
+const dotsContainer = document.getElementById('carousel-dots');
+
+let currentIndex = 0;
+
+// create dots dynamically based on number of slides
+slides.forEach((_, index) => {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (index === 0) dot.classList.add('active');
+    dot.addEventListener('click', () => goToSlide(index));
+    dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot');
+
+function goToSlide(index) {
+    currentIndex = index;
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[currentIndex].classList.add('active');
+}
+
+nextBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % slides.length;   // loops back to 0
+    goToSlide(currentIndex);
+});
+
+prevBtn.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + slides.length) % slides.length;   // loops to last
+    goToSlide(currentIndex);
+});
+
+// auto-play every 4 seconds
+setInterval(() => {
+    currentIndex = (currentIndex + 1) % slides.length;
+    goToSlide(currentIndex);
+}, 4000);
+
 
 /*
 const popupTriggers = document.querySelectorAll('.popup-trigger');
