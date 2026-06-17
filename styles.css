@@ -293,7 +293,10 @@ html{
     align-items: center;
     justify-content: center;
 }
-
+.Menu-images
+.openModal{
+    background-color: transparent;
+}
 .modal.open{
     opacity: 1;
     z-index: 999;
