@@ -175,13 +175,24 @@ html{
         .Catchphrase{
             width: 100%;
             height: auto;            
-            display: flex;
-            
+            display: flex;            
             justify-content: center;
-            align-items: center;
+            align-items: center;            
+            padding: 40px 0;
+        }
+        .Catchphrase-box{
+            padding: 40px;                   /* space inside the box */
+            border-radius: 15px;             /* rounded corners */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);   /* subtle lift effect */
+            display: flex;
+            flex-direction: column;
+            width: 70dvw;
+            height: 80dvh;
+            background-color: #e49f6981 !important; 
+            border-color: #0000;
         }
         .Catchphrase img{
-            width: clamp(30dvw, 40dvw, 45dvw);
+            width: clamp(30px, 40dvw, 500px);
         }
         .Catchphrase h1{
             text-align: center;
