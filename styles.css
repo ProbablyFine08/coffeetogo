@@ -187,7 +187,7 @@ html{
             width: 70dvw;
             height: 80dvh;
             background-color: #f4b27fbd !important; 
-            box-shadow: 5px, 5px, 300px, 7px, rgb(0, 0, 0);
+            box-shadow: -40px 55px 30px 17px rgba(0, 0, 0, 0.667);
         }
         .Catchphrase img{
             width: clamp(30px, 10dvw, 500px);
@@ -298,6 +298,11 @@ html{
     opacity: 1;
     z-index: 999;
 }
+#openModal{
+    width: 10dvw;
+    height: 20dvh;
+}
+
 
 .modal-inner{
     background-color: #e4c09c;
