@@ -181,23 +181,22 @@ html{
             padding: 40px 0;
         }
         .Catchphrase-box{
-            padding: 40px;                   /* space inside the box */
-            border-radius: 15px;             /* rounded corners */
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);   /* subtle lift effect */
-            display: flex;
-            flex-direction: column;
+            padding: 40px;                   
+            border-radius: 15px;                   
+            flex-direction: row;
             width: 70dvw;
             height: 80dvh;
-            background-color: #e49f6981 !important; 
-            border-color: #0000;
+            background-color: #f4b27fbd !important; 
+            box-shadow: 5px, 5px, 300px, 7px, rgb(0, 0, 0);
         }
         .Catchphrase img{
-            width: clamp(30px, 40dvw, 500px);
+            width: clamp(30px, 10dvw, 500px);
+
         }
         .Catchphrase h1{
             text-align: center;
-            font-size: clamp(2rem, 5dvw, 10rem);
-            width: 50dvw;
+            font-size: clamp(2rem, 5dvw, 3rem);
+            width: 20dvw;
             height: auto;
             font-family: 'Abril Fatface', serif;
             letter-spacing: .025em;
