@@ -181,9 +181,11 @@ html{
             padding: 40px 0;
         }
         .Catchphrase-box{
+            display: inherit;
+            align-items: flex-start;
             padding: 40px;                   
             border-radius: 15px;                   
-            flex-direction: row;
+            flex-direction: start;
             width: 70dvw;
             height: 80dvh;
             background-color: #f4b27fbd !important; 
@@ -191,12 +193,13 @@ html{
         }
         .Catchphrase img{
             width: clamp(30px, 10dvw, 500px);
-
+            height: auto;
+            flex-shrink: 0;
         }
         .Catchphrase h1{
             text-align: center;
             font-size: clamp(2rem, 5dvw, 3rem);
-            width: 20dvw;
+            width: 40dvw;
             height: auto;
             font-family: 'Abril Fatface', serif;
             letter-spacing: .025em;
