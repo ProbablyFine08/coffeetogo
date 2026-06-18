@@ -172,29 +172,42 @@ html{
             margin-top: 10px;
             width: 100%;
         }
-        .Catchphrase{
-            width: 100%;
-            height: auto;            
-            display: flex;            
-            justify-content: center;
-            align-items: center;            
-            padding: 40px 0;
-        }
+        
         .Catchphrase-box{
-            display: inherit;
-            align-items: flex-start;
-            padding: 40px;                   
-            border-radius: 15px;                   
-            flex-direction: start;
-            width: 70dvw;
-            height: 80dvh;
-            background-color: #f4b27fbd !important; 
-            box-shadow: -40px 55px 30px 17px rgba(0, 0, 0, 0.667);
+            display: block;
+            align-items: center;
+            justify-content: center;
+            max-width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            position: absolute;     
+            z-index: -1;       
         }
-        .Catchphrase img{
+
+        .Catchphrase{
+            width: 100dvw;
+            height: auto;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .Catchphrase-content{
+            z-index: 1;
+            position: relative;
+        }
+
+        .Catchphrase-box img{
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            
+        }
+
+        .Catchphrase-img{
             width: clamp(30px, 10dvw, 500px);
             height: auto;
             flex-shrink: 0;
+            z-index: 2;
         }
         .Catchphrase h1{
             text-align: center;
@@ -203,6 +216,7 @@ html{
             height: auto;
             font-family: 'Abril Fatface', serif;
             letter-spacing: .025em;
+            z-index: 2;
         }
 
         #Menu-text{
