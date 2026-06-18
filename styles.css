@@ -173,51 +173,51 @@ html{
             width: 100%;
         }
         
-        .Catchphrase-box{
-            display: block;
-            align-items: center;
-            justify-content: center;
-            max-width: 100%;
-            box-sizing: border-box;
-            height: auto;
-            position: absolute;     
-            z-index: -1;       
-        }
+    .Catchphrase {
+    position: relative;      /* anchor for absolute bg */
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
 
-        .Catchphrase{
-            width: 100dvw;
-            height: auto;
-            align-items: center;
-            justify-content: center;
-        }
+.Catchphrase-bg {
+    position: absolute;      /* pulled out of flow */
+    inset: 0;
+    width: 100dvw;
+    height: 100dvh;
+    object-fit: cover;
+    z-index: 0;
+}
 
-        .Catchphrase-content{
-            z-index: 1;
-            position: relative;
-        }
+.Catchphrase-box {
+    position: relative;      /* needed for z-index */
+    z-index: 1;              /* sits above bg */
+    display: flex;
+    flex-direction: row;     /* h1 left, img right */
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 100dvw;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
 
-        .Catchphrase-box img{
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-            
-        }
+.Catchphrase-img {
+    width: clamp(30px, 10dvw, 500px);
+    height: auto;
+    flex-shrink: 0;
+}
 
-        .Catchphrase-img{
-            width: clamp(30px, 10dvw, 500px);
-            height: auto;
-            flex-shrink: 0;
-            z-index: 2;
-        }
-        .Catchphrase h1{
-            text-align: center;
-            font-size: clamp(2rem, 5dvw, 3rem);
-            width: 40dvw;
-            height: auto;
-            font-family: 'Abril Fatface', serif;
-            letter-spacing: .025em;
-            z-index: 2;
-        }
+.Catchphrase h1 {
+    text-align: center;
+    font-size: clamp(2rem, 5dvw, 3rem);
+    font-family: 'Abril Fatface', serif;
+    letter-spacing: .025em;
+}
+        
 
         #Menu-text{
             font-family: 'Bauhaus 93', sans-serif;
