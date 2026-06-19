@@ -294,6 +294,11 @@ html{
     opacity: 0.8;
 }
 
+.popup{
+    display: flex;
+    align-items: center;
+}
+
 .modal{
     background-color: rgba(0,0,0,0.3);
     opacity: 0;
@@ -310,17 +315,40 @@ html{
     align-items: center;
     justify-content: center;
 }
-.Menu-images
+.Menu-images,
 .openModal{
     background-color: transparent;
+    
+    width: 30dvw;
+    height: auto;
+    border-color: transparent;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
 }
+
+.openModal{
+cursor: pointer;
+}
+
+.openModal::after{
+    content: "";
+    display: block;
+}
+
+.openModal:hover::after{
+    content: "Click to know more";
+}
+
 .modal.open{
     opacity: 1;
     z-index: 999;
 }
-#openModal{
-    width: 10dvw;
-    height: 20dvh;
+
+.openModal img{
+    width: 100%;
+    height: 100%;
 }
 
 
