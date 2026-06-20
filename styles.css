@@ -345,6 +345,7 @@ cursor: pointer;
     display: flex;
     position: relative;
     width: 100dvw;
+    max-height: 100dvh;
 }
 
 #closeModal{
@@ -364,7 +365,26 @@ cursor: pointer;
     background-color: #e4c09c;
     border-radius: 5px;
     text-align: center;
-    width: 30dvw;
+    width: 80dvw;
+    max-height: 100dvh;
+    display: flex;
+}
+
+#modal-description{
+    font-size: 10px;
+}
+
+#modal-price{
+    font-size: 10px;
+}
+
+#modal-title{
+    font-size: 20px;
+}
+
+.modal-inner img{
+    width: 10dvw;
+    height:auto;
 }
 
 .modal-inner h1,
