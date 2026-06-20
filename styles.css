@@ -317,14 +317,12 @@ html{
 }
 .Menu-images,
 .openModal{
-    background-color: transparent;
-    
+    background-color: transparent;    
     width: 30dvw;
     height: auto;
     border-color: transparent;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
     justify-content: center;
 }
 
@@ -342,8 +340,9 @@ cursor: pointer;
 }
 
 .modal.open{
-    opacity: 1;
+    opacity: 100%;
     z-index: 999;
+    display: flex;
 }
 
 .openModal img{

@@ -27,12 +27,14 @@ window.addEventListener('load', () => {
 });
 
 //popup
-const openBtn = document.getElementsByClassName("openModal");
+const openBtn = document.querySelectorAll(".openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
 
-openBtn.addEventListener("click", () => {
-    modal.classList.add("open");
+openBtn.forEach(button => {
+    button.addEventListener('click', () => {
+        modal.classList.add('open');
+    });
 });
 
 closeBtn.addEventListener("click", () => {
