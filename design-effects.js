@@ -31,8 +31,22 @@ const openBtn = document.querySelectorAll(".openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
 
+// modal inner elements
+const modalImg = document.getElementById("modal-img");
+const modalTitle = document.getElementById("modal-title");
+const modalDesc = document.getElementById("modal-description");
+const modalPrice = document.getElementById("modal-price");
+const modalServed = document.getElementById("modal-served")
+
 openBtn.forEach(button => {
     button.addEventListener('click', () => {
+        // grab data from the clicked button
+        modalImg.src = button.dataset.img;
+        modalTitle.textContent = button.dataset.title;
+        modalDesc.textContent = button.dataset.description;
+        modalPrice.textContent = button.dataset.price;
+        modalServed.textContent =
+
         modal.classList.add('open');
     });
 });

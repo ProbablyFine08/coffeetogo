@@ -44,34 +44,30 @@
     </section>
     <section class="Menus-section" >
         <h2 id="Menu-text">Menu</h2>
-        <button class="popup-close" id="popup-close">✕</button>
-                <div class="popup-content">
-                <div class="popup-image-side">
-                <img src="Media/Menu/Americano.png" alt="Americano" id="popup-img">
-        </div>
-        <div class="popup-details">
-            <h2 id="popup-name"></h2>
-            <p id="popup-description"></p>
-            <p><strong>Origin:</strong> <span id="popup-origin"></span></p>
-            <p><strong>Price:</strong> <span id="popup-price"></span></p>
-            <button class="popup-buy">Add to cart</button>
-        </div>
-       </dialog>-->
-    <div class="popup">
-        <button class="openModal">Americano
+        <div class="popup">
+        <button class="openModal"
+        data-title="Americano"
+        data-img="Media/Menu/Americano.png"
+        data-description="A bold espresso shot topped with hot water"
+        data-price="₱99"
+        data-served="Hot/Cold">Americano
         <img src="Media/Menu/Americano.png" id="Americano" class="Menu-images"> 
     </button>
     <button class="openModal">Brewed coffee
         <img src="Media/Menu/brewed.png" id="Brewed" class="Menu-images">
     </button>
     </div>
+    <!--Placeholder-->
        <div class="modal" id="modal">
-        <div class="modal-inner">
-            <h1>fucking hell</h1>
-            <p>Fucking details</p>
-            <button id="closeModal">close</button>
-        </div>
+    <div class="modal-inner">
+        <img id="modal-img" src="" alt="">
+        <h1 id="modal-title"></h1>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+        <p id="modal-served"></p>
+        <button id="closeModal">⨉</button>
     </div>
+</div>
     </section>
     <section class="Catchphrase">
     <img src="./Media/catchphrase-bg.png" class="Catchphrase-bg" alt="">

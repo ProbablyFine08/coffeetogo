@@ -343,6 +343,15 @@ cursor: pointer;
     opacity: 100%;
     z-index: 999;
     display: flex;
+    position: relative;
+    width: 100dvw;
+}
+
+#closeModal{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: large;
 }
 
 .openModal img{
@@ -444,4 +453,3 @@ cursor: pointer;
 .dot.active {
     background-color: #A0522D;
 }
-    
