@@ -175,7 +175,7 @@ html{
         
     .Catchphrase {
     position: relative;      /* anchor for absolute bg */
-    
+    height: 100dvh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -187,7 +187,7 @@ html{
     position: absolute;      /* pulled out of flow */
     inset: 0;
     width: 100dvw;
-    height: 100dvh;
+    height: 100%;
     object-fit: cover;
     z-index: 0;
 }
@@ -216,6 +216,7 @@ html{
     font-size: clamp(2rem, 5dvw, 3rem);
     font-family: 'Abril Fatface', serif;
     letter-spacing: .025em;
+    color: #dac4a1;
 }
         
 
@@ -262,6 +263,7 @@ html{
         .Shop{
             text-align: center;
             font-size: clamp();
+            
         }           
         
         .Shop-images{
