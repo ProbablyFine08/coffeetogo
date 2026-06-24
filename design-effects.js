@@ -45,7 +45,7 @@ openBtn.forEach(button => {
         modalTitle.textContent = button.dataset.title;
         modalDesc.textContent = button.dataset.description;
         modalPrice.textContent = button.dataset.price;
-        modalServed.textContent =
+        modalServed.textContent = button.dataset.served;
 
         modal.classList.add('open');
     });

@@ -5,4 +5,6 @@ inView(".Catchphrase-box", () => {
         { opacity: [0, 1], y: [50, 0] },
         { duration: 0.8, easing: "ease-out" }
     );
+    
+    //scroll(animate("#Menu-text",{}))
 });
