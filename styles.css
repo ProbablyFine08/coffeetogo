@@ -238,7 +238,7 @@ html{
             flex-direction: row;
             gap: 2dvw;
         }
-        .Menu-images img{
+        .Menu-images{
             
             align-items: center;
             justify-content: center;
@@ -339,6 +339,7 @@ cursor: pointer;
 
 .openModal:hover::after{
     content: "Click to know more";
+    align-items: center;
 }
 
 .modal.open{
@@ -354,7 +355,10 @@ cursor: pointer;
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
-    font-size: large;
+    font-size: 1.5rem;
+    position: absolute;
+    margin-right: 5px;
+    left: 97%;
 }
 
 .openModal img{
@@ -387,6 +391,10 @@ cursor: pointer;
 
 #modal-title{
     font-size: 20px;
+}
+
+#modal-served{
+    font-size: 1rem;
 }
 
 .modal-inner img{
