@@ -262,7 +262,7 @@ html{
         
         .Shop{
             text-align: center;
-            font-size: clamp();
+            font-size: clamp(.5rem,.7rem,1.2rem);
             
         }           
         
