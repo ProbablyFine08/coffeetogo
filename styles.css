@@ -390,7 +390,8 @@ cursor: pointer;
 }
 
 #modal-title{
-    font-size: 20px;
+    font-size: 1.3rem;
+    height: auto;
 }
 
 #modal-served{
@@ -400,6 +401,7 @@ cursor: pointer;
 .modal-inner img{
     width: 10dvw;
     height:auto;
+    margin-left: 5px;
 }
 
 .modal-inner h1,
