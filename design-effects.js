@@ -26,9 +26,10 @@ window.addEventListener('load', () => {
     });
 });
 
-//popup menu
+//popup
 const openBtn = document.querySelectorAll(".openModal");
 const closeBtn = document.getElementById("closeModal");
+const cartBtn = document.getElementById("cartButton");
 const modal = document.getElementById("modal");
 
 // modal inner elements
@@ -53,6 +54,10 @@ openBtn.forEach(button => {
 
 closeBtn.addEventListener("click", () => {
     modal.classList.remove("open");
+});
+
+cartBtn.addEventListener("click", () => {
+    //
 });
 
 //carousel
