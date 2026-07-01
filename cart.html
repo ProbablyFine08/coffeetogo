@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Coffee to go"
+        content="Welcome to Coffee to go, your ultimate destination for all things coffee! We are passionate about providing you with the finest coffee experience, whether you're a seasoned coffee connoisseur or just starting your journey into the world of coffee. At Coffee Spot, we offer a wide range of premium coffee beans sourced from around the globe, expertly roasted to perfection to bring out their unique flavors and aromas. Our selection includes single-origin coffees, blends, and specialty roasts that cater to every taste preference. Whether you prefer a bold espresso, a smooth pour-over, or a creamy latte, we have the perfect coffee for you. Explore our collection and discover your new favorite brew today!">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+    <title>Coffee to go</title>
+    <link rel="icon" type="image/svg+xml" href="Logos/favicon.svg">
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:wght@300;400;700&family=Lato:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&family=Merriweather:wght@300;400;700&family=DM+Serif+Display&family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Abril+Fatface&family=Rufina:wght@400;700&family=Spectral:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <div>
+            <a href="index.html" class="Logos">
+                <img src="Logos/LOGO-NONAME.png" alt="Coffee spot logo" id="logo">
+                <img src="Logos/Coffee-to-go (3).png" alt="Coffee to go" id="text-logo">
+            </a>
+        </div>
+        <a href="index.html" class="navbar-button">← Back to menu</a>
+    </header>
+
+    <main class="cart-page">
+        <h1 class="cart-page-title">Your Cart</h1>
+
+        <div class="cart-page-layout">
+            <!-- left — cart items -->
+            <div class="cart-page-items" id="cart-page-items">
+                <p class="cart-empty">Your cart is empty</p>
+            </div>
+
+            <!-- right — order summary -->
+            <div class="cart-page-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="summary-subtotal">₱0</span>
+                </div>
+                <div class="summary-row">
+                    <span>Delivery</span>
+                    <span id="summary-delivery">₱50</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="summary-total">₱50</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">Place Order</button>
+                <button class="clear-cart-btn" id="clear-cart-btn">Clear Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+</body>
+</html>

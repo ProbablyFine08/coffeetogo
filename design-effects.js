@@ -1,3 +1,5 @@
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 window.addEventListener('scroll', () => {
     const header = document.getElementById('navbar');
 
@@ -57,7 +59,16 @@ closeBtn.addEventListener("click", () => {
 });
 
 cartBtn.addEventListener("click", () => {
-    //
+    const item = {
+        title: modalTitle.textContent,
+        price: modalPrice.textContent,
+        img: modalImg.src,
+        id: Date.now()
+    };
+
+    // save to localStorage so the new page can read it
+    cart.push(item);
+    localStorage.setItem('cart', JSON.stringify(cart));
 });
 
 //carousel
