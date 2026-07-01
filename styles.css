@@ -283,6 +283,11 @@ header.scrolled .navbar-button {
     flex-direction: row;
 }
 
+.Menu-images:hover{
+    filter:drop-shadow(0 0 75px rgb(240, 239, 239));
+    transition: all 0.3s ease-in-out;
+}
+
 
 .Subscription {
     /*background-color:#c3a990*/
@@ -334,7 +339,7 @@ header.scrolled .navbar-button {
     opacity: 0.8;
 }
 
-.popup {
+.menu-popup {
     display: flex;
     align-items: center;
 }
@@ -356,7 +361,7 @@ header.scrolled .navbar-button {
     justify-content: center;
 }
 
-.Menu-images,
+.Menu-images,.subs-img,
 .openModal {
     background-color: transparent;
     width: 30dvw;
@@ -369,16 +374,6 @@ header.scrolled .navbar-button {
 
 .openModal {
     cursor: pointer;
-}
-
-.openModal::after {
-    content: "";
-    display: flex;
-}
-
-.openModal:hover::after {
-    content: "Click to know more";
-    align-items: center;
 }
 
 .modal.open {
@@ -450,7 +445,13 @@ header.scrolled .navbar-button {
 
 }
 
-
+.subs-popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2dvw;
+    margin-top: 20px;
+}
 
 .carousel-container {
     position: relative;
@@ -480,7 +481,7 @@ header.scrolled .navbar-button {
 .carousel-slide img {
     width: 100%;
     max-width: 300px;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
     border-radius: 10px;
 }

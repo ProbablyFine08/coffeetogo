@@ -26,7 +26,7 @@ window.addEventListener('load', () => {
     });
 });
 
-//popup
+//popup menu
 const openBtn = document.querySelectorAll(".openModal");
 const closeBtn = document.getElementById("closeModal");
 const modal = document.getElementById("modal");
