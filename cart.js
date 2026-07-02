@@ -116,8 +116,8 @@ deliveryAddress.addEventListener('keydown', (e) => {
 
 
 // your store coordinates — update to your actual location
-const STORE_COORDS = { lat: 14.4297, lng: 120.9367 };  // Imus, Cavite
-const STORE_ADDRESS = 'Imus, Cavite, Philippines';
+const STORE_COORDS = { lat: 14.552, lng: 121.02358333333 };  // Imus, Cavite
+const STORE_ADDRESS = 'Imus, CaviTe, Philippines';
 
 // delivery fee settings
 const FREE_KM = 5;           // first 5km is free/base
