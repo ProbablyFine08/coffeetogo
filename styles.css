@@ -703,3 +703,8 @@ header.scrolled .navbar-button {
     padding: 0 20px;
     font-family: 'Lora', serif;
 }
+
+.cart-delivery-method{
+    display: flex;
+    flex-direction: column;
+}
