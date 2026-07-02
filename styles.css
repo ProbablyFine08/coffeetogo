@@ -547,13 +547,20 @@ header.scrolled .navbar-button {
 
 
 
-
+.cart-body {
+    background-color: #f89e6e96;
+    font-family: 'Lora', serif;
+    color: rgba(43, 26, 0, 0.868);
+    min-height: 100vh;
+    padding: 20px;
+}
 
 .cart-page {
     max-width: 1100px;
     margin: 40px auto;
     padding: 0 20px;
     font-family: 'Lora', serif;
+    background-color: #f5e6d3;
 }
 
 .cart-page-title {

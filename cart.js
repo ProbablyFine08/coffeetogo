@@ -122,7 +122,7 @@ const STORE_ADDRESS = 'Imus, CaviTe, Philippines';
 // delivery fee settings
 const FREE_KM = 5;           // first 5km is free/base
 const BASE_FEE = 50;         // base delivery fee
-const FEE_PER_KM = 15;       // ₱15 per km beyond 5km
+const FEE_PER_KM = 6;       // ₱6 per km beyond 5km
 
 let map;
 let marker;
